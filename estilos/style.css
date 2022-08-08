@@ -24,6 +24,7 @@ body{
 header {
     background-image: url(../imagens/cafe_da_manha.jpg);
     background-repeat: no-repeat;
+    width: 100vw;
 
    background-position: center;
      background-size: cover;
@@ -67,6 +68,7 @@ header a:hover{
 
 main {
     display: grid;
+    width: 100vw;
     grid-template-rows: max-content max-content max-content max-content max-content;
     grid-template-areas: "s1" "s2" "s3" "s4" "s5";
 
@@ -200,6 +202,7 @@ tr{
 }
 
 footer {
+    width: 100vw;
     background-color: var(--rocho-forte);
     color: var(--branco-fraco);
     justify-content: center;
