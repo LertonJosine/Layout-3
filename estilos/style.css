@@ -17,6 +17,9 @@
 
 
 }
+body{
+    width: 100vw;
+}
 
 header {
     background-image: url(../imagens/cafe_da_manha.jpg);
