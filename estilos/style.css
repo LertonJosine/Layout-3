@@ -17,206 +17,145 @@
 
 
 }
-body{
-    width: 100vw;
-}
 
 header {
-    background-image: url(../imagens/cafe_da_manha.jpg);
+    background-image: url(../imagens/pexels-elizabeth-zernetska-9001223.jpg);
     background-repeat: no-repeat;
-    width: 100vw;
-
-   background-position: center;
-     background-size: cover;
-     
     color: var(--branco-fraco);
-
-
+    text-align: center;
+    background-position: center;
+    background-size: cover;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-
+    padding: 2%;
 }
 
-header li{
-    display: inline;
-    list-style: none;
-
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    list-style-type: none;
 }
 
-header a{
-    text-decoration: none;
-    color: var(--branco-fraco);
-    margin: 10px;
-    transition-duration: 1s;
-}
-
-header a:hover{
-    color: var(--rosa);
-
-}
-.dh{
+.dh {
+    justify-content: center;
     padding: 20%;
-    text-align: center;
-    max-width: 300px;
-    margin: auto;
+    
 }
-
 
 main {
     display: grid;
-    width: 100vw;
     grid-template-rows: max-content max-content max-content max-content max-content;
     grid-template-areas: "s1" "s2" "s3" "s4" "s5";
 
 }
-
-.s1 {
-    grid-area: s1;
+.s1{grid-area: s1;
     display: flex;
     justify-content: space-between;
-    padding: 15%;
-    background-color: var(--vermelho);
     align-items: center;
-    gap: 20px;
-}
-
-.s1 div{
-    text-align: center;
+    padding: 5%;
+    gap: 5%;
+    background-color: var(--vermelho);    
     color: var(--branco-fraco);
-    max-width: 300px;
-}
-.s1 h2{
-    margin-bottom: 15%;
-    text-decoration: underline solid var(--branco-fraco);
-    text-underline-offset: 20px;
-    
 }
 
 .s1 img{
-    width: 40%;
-    height: 100%;
+    width: 50%;
+    height: 60%;
+}
+.s1 p, h2{
+    text-align: center;
 }
 
-.s2 {
-    grid-area: s2;
-    padding: 10%;
-    background-image: url(../imagens/imagem1.png);
-    background-repeat: no-repeat;
+
+.s1 h2{
+    text-decoration: underline solid var(--branco-normal);
+    text-underline-offset: 15px;
+    margin: 10%;
+
+}
+.s2{grid-area: s2;
+    background-image: url(../imagens/pexels-ivan-samkov-8951561.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10%;
     color: var(--branco-fraco);
-    text-align: center;
-    background-position-y: center;
-    
-}
 
+}
 .s2 div{
-    max-width: 300px;
+    max-width: 50%;
     margin: auto;
+    text-align: center;
 }
 .s2 h2{
-    text-decoration: underline solid var(--branco-fraco);
-    margin-bottom: 8%;
-    text-underline-offset: 20px;    
-}
+    margin: 10%;
+    text-decoration: underline solid var(--vermelho);
+    text-underline-offset: 10px;
 
-.s3 {
-    grid-area: s3;
+}
+.s3{grid-area: s3;
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: max-content max-content;
-    grid-template-areas: "title title" "d1 d2";
-    gap: 20px;  
-    margin: 20px 40px;
-
+    grid-template-areas: "h2 h2" "d1 d2";
+    gap: 10%;
+    padding: 10%;
+    font-size: smaller;
+}
+.s3 h2{
+    grid-area: h2;
+    text-decoration: underline solid var(--vermelho);
+    text-underline-offset: 10px;
 }
 
-.s3 div div{
+.d1{
+    grid-area: d1;
+}
+
+.d1 div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 4%;
 }
-
-.s3 div div > p{
+.s3 div div p{
     color: var(--vermelho);
-    font-size: small;
-
 }
-.d1{
-    grid-area: d1;
-    max-width: 500px;
-    margin: auto;
+.s3 div > p{
+    color: rgba(0, 0, 0, 0.637);
+    margin-bottom: 5%;
 }
 .d2{
     grid-area: d2;
-    max-width: 500px;
-    margin: auto;
+    
 }
-
-.s3 h3{
-    margin: 10px 0px;
-    max-width: 300px;
-
+.d2 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
 }
-
-.s3 h2{
-    grid-area: title;
-    text-align: center;
-    margin: 20px;
-    text-decoration: underline solid var(--rosa);
-    text-underline-offset: 10px;
-    /* font-family: ; */
-}
-
-.s4 {
+.s4{grid-area: s4;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2% 0%;
 }
+
 .s4 img{
     width: 30%;
 }
-
-.s5 {
-    background-color: var(--rocho-menos-forte);
-   
-    color: var(--branco-fraco);
-
-}
-table{
-    margin: auto;
-    size: 100%;
-    padding: 5%;
-}
-
-tr{
-    padding: 10px;
-}
-.s5 th{
-    text-align: left;
-}
-
-footer {
-    width: 100vw;
-    background-color: var(--rocho-forte);
-    color: var(--branco-fraco);
-    justify-content: center;
-    padding: 2%;
-
-}
-footer a{
-    text-decoration: none;
-    color: var(--branco-fraco);
-
-}
-footer ul{
+.s5{
+    grid-area: s5;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    color: var(--branco-fraco);
+    background-color: var(--rocho-menos-forte);
 }
+footer {}
